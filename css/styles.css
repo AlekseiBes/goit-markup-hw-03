@@ -1,0 +1,219 @@
+:root {
+  --primary-font-color: rgba(117, 117, 117, 1);
+  --primari-buckground-color: rgba(255, 255, 255, 1);
+  --secondary-font-color: rgba(33, 150, 243, 1);
+  --third-font-color: rgba(33, 33, 33, 1);
+  --font-color-footer: rgba(255, 255, 255, 0.6);
+  --font-color-logo-2: rgba(0, 0, 0, 1);
+  --buckground-color-1: rgba(245, 244, 250, 1);
+  --buckground-color-2: rgba(47, 48, 58, 1);
+  --contact-color: rgba(117, 117, 117, 1);
+}
+
+body {
+  background-color: var(--primari-buckground-color);
+  color: var(--primary-font-color);
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Отменяем подчеркивание у ссылки */
+
+a {
+  text-decoration: none;
+}
+
+/* hidden */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--secondary-font-color);
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo2 {
+  color: var(--font-color-logo-2);
+}
+
+.logo3 {
+  color: var(--primari-buckground-color);
+}
+
+/*  navigation contact */
+
+.site-nav {
+  color: var(--third-font-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.site-nav:hover,
+.site-nav:focus {
+  color: var(--secondary-font-color);
+}
+
+.class-nav {
+  color: var(--secondary-font-color);
+}
+
+.class-contact {
+  color: var(--contact-color);
+  font-weight: 500;
+  line-height: 1.14;
+}
+
+.class-contact:hover,
+.class-contact:focus {
+  color: var(--secondary-font-color);
+}
+
+.title-h1 {
+  text-transform: uppercase;
+  color: var(--primari-buckground-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+.title-h2 {
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.title-h2-2 {
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.title-h3 {
+  text-transform: uppercase;
+  color: var(--third-font-color);
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.title-h3-2 {
+  color: var(--third-font-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.text-perevag {
+  line-height: 1.7;
+}
+
+.profession {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.text-team {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* footer font color */
+
+.site-footer {
+  color: var(--font-color-footer);
+
+  line-height: 1.7;
+}
+
+.site-footer:hover,
+.site-footer:focus {
+  color: var(--secondary-font-color);
+}
+
+.site-footer-2 {
+  color: var(--primari-buckground-color);
+}
+
+.site-footer-2:hover,
+.site-footer-2:focus {
+  color: var(--secondary-font-color);
+}
+
+/* section footer color */
+
+.section-footer {
+  background-color: var(--buckground-color-2);
+  line-height: 1.7;
+}
+
+/* buckground color team */
+
+.color-team {
+  background-color: var(--buckground-color-1);
+}
+
+.color-foto-team {
+  background-color: var(--primari-buckground-color);
+}
+
+/* button zakaz uslugi */
+
+.button-posluga {
+  background-color: var(--secondary-font-color);
+  color: var(--primari-buckground-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.button-posluga:hover,
+.button-posluga:focus {
+  background-color: rgba(24, 140, 232, 1);
+  color: var(--primari-buckground-color);
+  cursor: pointer;
+}
+
+/* button portfolio */
+
+.button-portfolio {
+  font-family: inherit;
+  background-color: var(--buckground-color-1);
+  color: var(--third-font-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.button-portfolio:focus,
+.button-portfolio:hover {
+  background-color: var(--secondary-font-color);
+  color: var(--primari-buckground-color);
+}
+
+.contact {
+  font-style: normal;
+}
