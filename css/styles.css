@@ -51,12 +51,6 @@ ul {
   padding-left: 0;
 }
 
-/* Нормалізація шрифту посилань */
-
-.contact {
-  font-style: normal;
-}
-
 /* Приховання заголовків */
 
 .visually-hidden {
@@ -257,7 +251,7 @@ img {
   max-width: 270px;
 }
 
-/* Заголовок наша робота-команда*/
+/* Заголовок наша робота-команда */
 
 .title-h2 {
   color: var(--third-font-color);
@@ -267,6 +261,10 @@ img {
 
   margin-bottom: 50px;
   text-align: center;
+}
+
+.section-bott {
+  padding-bottom: 94px;
 }
 
 /* Наша робота */
@@ -306,8 +304,10 @@ img {
 }
 
 .profession {
+  color: var(--primary-font-color);
   font-size: 16px;
   line-height: 1.9;
+  margin-bottom: 30px;
 }
 
 .text-team {
@@ -329,6 +329,8 @@ img {
 
 .site-footer-2 {
   color: var(--primari-buckground-color);
+
+  margin-top: 9px;
 }
 
 .site-footer-2:hover,
@@ -336,12 +338,25 @@ img {
   color: var(--secondary-font-color);
 }
 
-/* section footer color */
+/* Нормалізація шрифту посилань */
+
+.contact {
+  font-style: normal;
+
+  margin-top: 20px;
+}
+
+/* Секція футер */
 
 .section-footer {
   background-color: var(--buckground-color-2);
   line-height: 1.7;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+/* Портфолио */
 
 /* button portfolio */
 
@@ -359,9 +374,3 @@ img {
   background-color: var(--secondary-font-color);
   color: var(--primari-buckground-color);
 }
-
-/* .employees {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-} */
