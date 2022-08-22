@@ -18,24 +18,23 @@ body {
   font-size: 14px;
 }
 
-/* Отменяем подчеркивание у ссылки */
+/* Відміна підкреслення у посилань */
 
 a {
   text-decoration: none;
 }
 
-/* Сбрасывание маркеров списка */
+/* Скидання маркувань списку */
 
 .list {
   list-style: none;
 }
 
-
 img {
   display: block;
 }
 
-/* Сброс стилей маржин */
+/* Скидання стилів марджин */
 
 h1,
 h2,
@@ -52,13 +51,13 @@ ul {
   padding-left: 0;
 }
 
-/* Нормализация шрифта ссылок */
+/* Нормалізація шрифту посилань */
 
 .contact {
   font-style: normal;
 }
 
-/* hidden */
+/* Приховання заголовків */
 
 .visually-hidden {
   position: absolute;
@@ -79,7 +78,7 @@ img {
   height: auto;
 }
 
-/* Ширина контента */
+/* Ширина */
 
 .container {
   width: 1200px;
@@ -89,34 +88,18 @@ img {
   padding-right: 15px;
 }
 
-/* Хедер флекс */
-
-.header-container {
-  display: flex;
-  align-items: center;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.menu {
-  display: flex;
-  column-gap: 50px;
-}
-
-.menu-contact {
-  margin-left: 344px;
-}
-
-.line {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
-}
-
-/* Logo */
+/* Логотип */
 
 .logo {
   color: var(--secondary-font-color);
   font-family: 'Raleway', 'sans-serif';
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 93px;
 }
 
 .logo2 {
@@ -127,12 +110,37 @@ img {
   color: var(--primari-buckground-color);
 }
 
-/*  navigation contact */
+/*  Навігація */
+
+.site-navigation {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-navigation .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Меню контакти */
+
+.menu {
+  display: flex;
+  column-gap: 50px;
+  margin-left: auto;
+}
+
+/* Навігація і контакти */
+
+.head-menu {
+  display: flex;
+  align-items: center;
+}
 
 .site-nav {
   color: var(--third-font-color);
   font-weight: 500;
   line-height: 1.14;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -145,6 +153,7 @@ img {
 
 .class-nav {
   color: var(--secondary-font-color);
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -154,6 +163,7 @@ img {
   color: var(--contact-color);
   font-weight: 500;
   line-height: 1.14;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -164,7 +174,20 @@ img {
   color: var(--secondary-font-color);
 }
 
+.line {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
 /* Заголовки */
+
+.title-h2-2 {
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* Герой */
 
 .title-h1 {
   text-transform: uppercase;
@@ -174,27 +197,43 @@ img {
   line-height: 1.36;
 
   margin-bottom: 30px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
 }
 
-.title-h2 {
-  color: var(--third-font-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-
-  margin-bottom: 50px;
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+
+  background-color: var(--buckground-color-2);
 }
 
-.title-h2-2 {
-  color: var(--third-font-color);
+/* Кнопка замовлення */
+
+.button-posluga {
+  background-color: var(--secondary-font-color);
+  color: var(--primari-buckground-color);
+  cursor: pointer;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: inline-block;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
 }
+
+.button-posluga:hover,
+.button-posluga:focus {
+  background-color: rgba(24, 140, 232, 1);
+  color: var(--primari-buckground-color);
+  cursor: pointer;
+}
+
+/* Заголовок переваг */
 
 .title-h3 {
   text-transform: uppercase;
@@ -206,55 +245,64 @@ img {
   max-width: 270px;
 }
 
-.title-h3-2 {
-  color: var(--third-font-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-/* Герой */
-
-.section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--buckground-color-2);
-  text-align: center;
-}
+/* Перелік переваг */
 
 .list-perevag {
   display: flex;
   column-gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
-
-/* Перечень преимуществ */
 
 .text-perevag {
   line-height: 1.7;
   max-width: 270px;
 }
 
+/* Заголовок наша робота-команда*/
+
+.title-h2 {
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Наша робота */
+
 .hobby {
   display: flex;
   column-gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-/* buckground color team */
+/* Заголовок команди */
+
+.title-h3-2 {
+  color: var(--third-font-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* колір фону команди*/
 
 .color-team {
   background-color: var(--buckground-color-1);
+}
+
+.list-team {
   display: flex;
   column-gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .color-foto-team {
   background-color: var(--primari-buckground-color);
+  max-width: 270px;
+  text-align: center;
 }
 
 .profession {
@@ -295,29 +343,6 @@ img {
   line-height: 1.7;
 }
 
-/* button zakaz uslugi */
-
-.button-posluga {
-  background-color: var(--secondary-font-color);
-  color: var(--primari-buckground-color);
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
-  display: inline-block;
-  width: 216px;
-  height: 50px;
-  border-radius: 4px;
-}
-
-.button-posluga:hover,
-.button-posluga:focus {
-  background-color: rgba(24, 140, 232, 1);
-  color: var(--primari-buckground-color);
-  cursor: pointer;
-}
-
 /* button portfolio */
 
 .button-portfolio {
@@ -334,3 +359,9 @@ img {
   background-color: var(--secondary-font-color);
   color: var(--primari-buckground-color);
 }
+
+/* .employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+} */
