@@ -24,6 +24,40 @@ a {
   text-decoration: none;
 }
 
+/* Сбрасывание маркеров списка */
+
+.list {
+  list-style: none;
+}
+
+
+img {
+  display: block;
+}
+
+/* Сброс стилей маржин */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* Нормализация шрифта ссылок */
+
+.contact {
+  font-style: normal;
+}
+
 /* hidden */
 
 .visually-hidden {
@@ -39,8 +73,40 @@ a {
   margin: -1px;
 }
 
-.list {
-  list-style: none;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ширина контента */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Хедер флекс */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+.menu-contact {
+  margin-left: 344px;
+}
+
+.line {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 /* Logo */
@@ -50,6 +116,7 @@ a {
   font-family: 'Raleway', 'sans-serif';
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 
 .logo2 {
@@ -66,6 +133,9 @@ a {
   color: var(--third-font-color);
   font-weight: 500;
   line-height: 1.14;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav:hover,
@@ -75,12 +145,18 @@ a {
 
 .class-nav {
   color: var(--secondary-font-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .class-contact {
   color: var(--contact-color);
   font-weight: 500;
   line-height: 1.14;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .class-contact:hover,
@@ -88,12 +164,19 @@ a {
   color: var(--secondary-font-color);
 }
 
+/* Заголовки */
+
 .title-h1 {
   text-transform: uppercase;
   color: var(--primari-buckground-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
 }
 
 .title-h2 {
@@ -101,6 +184,9 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .title-h2-2 {
@@ -115,6 +201,9 @@ a {
   color: var(--third-font-color);
   font-weight: 700;
   line-height: 1.14;
+
+  margin-bottom: 10px;
+  max-width: 270px;
 }
 
 .title-h3-2 {
@@ -124,8 +213,48 @@ a {
   line-height: 1.19;
 }
 
+/* Герой */
+
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--buckground-color-2);
+  text-align: center;
+}
+
+.list-perevag {
+  display: flex;
+  column-gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Перечень преимуществ */
+
 .text-perevag {
   line-height: 1.7;
+  max-width: 270px;
+}
+
+.hobby {
+  display: flex;
+  column-gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* buckground color team */
+
+.color-team {
+  background-color: var(--buckground-color-1);
+  display: flex;
+  column-gap: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.color-foto-team {
+  background-color: var(--primari-buckground-color);
 }
 
 .profession {
@@ -142,7 +271,6 @@ a {
 
 .site-footer {
   color: var(--font-color-footer);
-
   line-height: 1.7;
 }
 
@@ -167,26 +295,20 @@ a {
   line-height: 1.7;
 }
 
-/* buckground color team */
-
-.color-team {
-  background-color: var(--buckground-color-1);
-}
-
-.color-foto-team {
-  background-color: var(--primari-buckground-color);
-}
-
 /* button zakaz uslugi */
 
 .button-posluga {
   background-color: var(--secondary-font-color);
   color: var(--primari-buckground-color);
   cursor: pointer;
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+
+  display: inline-block;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
 }
 
 .button-posluga:hover,
@@ -199,7 +321,6 @@ a {
 /* button portfolio */
 
 .button-portfolio {
-  font-family: inherit;
   background-color: var(--buckground-color-1);
   color: var(--third-font-color);
   cursor: pointer;
@@ -212,8 +333,4 @@ a {
 .button-portfolio:hover {
   background-color: var(--secondary-font-color);
   color: var(--primari-buckground-color);
-}
-
-.contact {
-  font-style: normal;
 }
